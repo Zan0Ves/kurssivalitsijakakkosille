@@ -11,7 +11,7 @@ import time
 service = Service(executable_path="chromedriver.exe")
 driver = webdriver.Chrome(service=service)
 
-time.sleep(10) #sovellus odottaa hetken googlen avautumisen jälkeen
+time.sleep(3) #sovellus odottaa hetken googlen avautumisen jälkeen
 
 driver.get("https://helsinki.inschool.fi/!02716814/selection/view?") #avataan sivusto
 
@@ -20,17 +20,16 @@ WebDriverWait(driver, 10).until(
 )
 #odotetaan sähköpostiosoite kenttää
 
-input_element = driver.find_element(By.ID, "login-frontdoor") #löydetään sähköposti kenttä
+input_element = driver.find_element(By.ID, "login-frontdoor") #löydetään sähköpostin kenttä
 input_element.clear()
-input_element.send_keys("wilman sähköposti" + Keys.ENTER) #laitetaan sinne sähköposti ja painetaan ENTER
+input_element.send_keys("mika.dernov@gmail.com" + Keys.ENTER) #laitetaan sinne sähköposti ja painetaan ENTER
 
-input_password = driver.find_element(By.ID, "password")
+input_password = driver.find_element(By.ID, "password") #löydetään salasanan kenttä
 input_password.clear()
-input_password.send_keys("wilman salasana" + Keys.ENTER)
- #tehdään sama asia salasanalle
-
+input_password.send_keys("Mika5200!" + Keys.ENTER) #laitetaan sinne salasana ja painetaan ENTER
+ 
 WebDriverWait(driver, 5).until(
-    EC.presence_of_element_located((By.PARTIAL_LINK_TEXT, "3. periodi lv 2024-2025")) #odotetaan nappia
+    EC.presence_of_element_located((By.PARTIAL_LINK_TEXT, "3. periodi lv 2024-2025")) #odotetaan 3. periodin kurssejen nappia
 )
 
 selectbutton = driver.find_element(By.ID, "tray-selection-on-first-click") #löydetään pikavalintanäppäin
@@ -40,88 +39,104 @@ firstbutton = driver.find_element(By.PARTIAL_LINK_TEXT, "3. periodi lv 2024-2025
 firstbutton.click()#painetaan nappia
 
 WebDriverWait(driver, 5).until(
-    EC.presence_of_element_located((By.XPATH, "ensimmäinen kurssi joka pitää valita (xpath) ")) #odotetaan kurssin nappia
+    EC.presence_of_element_located((By.XPATH, "/html/body/div[2]/div/div[2]/div/div/div/div[2]/ul/li[2]/ul/li/a[2]")) #odotetaan 1. kurssin nappia
 )
 
-courseone = driver.find_element(By.XPATH, "1. valittavan kurssin xpath")#löydetään 1. rivin kurssi
+courseone = driver.find_element(By.XPATH, "/html/body/div[2]/div/div[2]/div/div/div/div[2]/ul/li[2]/ul/li/a[5]")#löydetään 1. rivin kurssi
 courseone.click()#painetaan sitä
 
-coursetwo = driver.find_element(By.XPATH, "2. valittavan kurssin xpath")#löydetään 2. rivin kurssi
+coursetwo = driver.find_element(By.XPATH, "/html/body/div[2]/div/div[2]/div/div/div/div[2]/ul/li[3]/ul/li/a[2]")#löydetään 2. rivin kurssi
 coursetwo.click()#painetaan sitä
 
-
-coursethree = driver.find_element(By.XPATH, "3. valittavan kurssin xpath")#löydetään 3. rivin kurssi
+coursethree = driver.find_element(By.XPATH, "/html/body/div[2]/div/div[2]/div/div/div/div[2]/ul/li[4]/ul/li/a[8]")#löydetään 3. rivin kurssi
 coursethree.click()#painetaan sitä
 
-coursefour = driver.find_element(By.XPATH, "4. valittavan kurssin xpath")#löydetään 4. rivin kurssi
+coursefour = driver.find_element(By.XPATH, "/html/body/div[2]/div/div[2]/div/div/div/div[2]/ul/li[5]/ul/li/a[11]")#löydetään 4. rivin kurssi
 coursefour.click()#painetaan sitä
 
-coursefive = driver.find_element(By.XPATH, "5. valittavan kurssin xpath")#löydetään 5. rivin kurssi
+coursefive = driver.find_element(By.XPATH, "/html/body/div[2]/div/div[2]/div/div/div/div[2]/ul/li[6]/ul/li/a[28]")#löydetään 5. rivin kurssi
 coursefive.click()#painetaan sitä
 
-coursesix = driver.find_element(By.XPATH, "6. valittavan kurssin xpath")#löydetään 6. rivin kurssi
+coursesix = driver.find_element(By.XPATH, "/html/body/div[2]/div/div[2]/div/div/div/div[2]/ul/li[7]/ul/li/a[7]")#löydetään 6. rivin kurssi
 coursesix.click()#painetaan sitä
 
-courseseven = driver.find_element(By.XPATH, "7. valittavan kurssin xpath")#löydetään 7. rivin kurssi
+courseseven = driver.find_element(By.XPATH, "/html/body/div[2]/div/div[2]/div/div/div/div[2]/ul/li[8]/ul/li/a[6]")#löydetään 7. rivin kurssi
 courseseven.click()#painetaan sitä
 
-firstbutton.click()#suljetaan 3 periodin kurssit
+firstbutton.click()#suljetaan 3. periodin kurssit
 
-firstbutton2 = driver.find_element(By.PARTIAL_LINK_TEXT, "4. periodi lv 2024-2025")#löydetään 4. perioidin kurssin nappi
-firstbutton2.click()#painetaan nappia
+time.sleep(0.5) #odotetaan puoli sekuntia, jotta 4. periodin kurssit ehtivät latautua
 
-courseone2 = driver.find_element(By.XPATH, "1. valittavan kurssin xpath")#löydetään 1. rivin kurssi
-courseone2.click()#painetaan sitä
+WebDriverWait(driver, 5).until(
+    EC.presence_of_element_located((By.XPATH, "/html/body/div[2]/div/div[1]/div/div/div[2]/ul[1]/li[4]/a")) #odotetaan 4. periodin
+)
 
-coursetwo2 = driver.find_element(By.XPATH, "2. valittavan kurssin xpath")#löydetään 2. rivin kurssi
-coursetwo2.click()#painetaan sitä
+firstbuttona = driver.find_element(By.XPATH, "/html/body/div[2]/div/div[1]/div/div/div[2]/ul[1]/li[4]/a")#löydetään 4. perioidin nappi
+firstbuttona.click()#painetaan nappia
+
+WebDriverWait(driver, 5).until(
+    EC.presence_of_element_located((By.XPATH, "/html/body/div[2]/div/div[2]/div/div/div/div[2]/ul/li[2]/ul/li/a[6]")) #odotetaan 1. kurssin nappia
+)
+
+courseonea = driver.find_element(By.XPATH, "/html/body/div[2]/div/div[2]/div/div/div/div[2]/ul/li[2]/ul/li/a[6]")#löydetään 1. rivin kurssi
+courseonea.click()#painetaan sitä
+
+coursetwoa = driver.find_element(By.XPATH, "/html/body/div[2]/div/div[2]/div/div/div/div[2]/ul/li[3]/ul/li/a[9]")#löydetään 2. rivin kurssi
+coursetwoa.click()#painetaan sitä
+
+coursethreea = driver.find_element(By.XPATH, "/html/body/div[2]/div/div[2]/div/div/div/div[2]/ul/li[4]/ul/li/a[9]")#löydetään 3. rivin kurssi
+coursethreea.click()#painetaan sitä
+
+coursefoura = driver.find_element(By.XPATH, "/html/body/div[2]/div/div[2]/div/div/div/div[2]/ul/li[5]/ul/li/a[3]")#löydetään 4. rivin kurssi
+coursefoura.click()#painetaan sitä
+
+coursefivea = driver.find_element(By.XPATH, "/html/body/div[2]/div/div[2]/div/div/div/div[2]/ul/li[6]/ul/li/a[3]")#löydetään 5. rivin kurssi
+coursefivea.click()#painetaan sitä
+
+coursesixa = driver.find_element(By.XPATH, "/html/body/div[2]/div/div[2]/div/div/div/div[2]/ul/li[7]/ul/li/a[8]")#löydetään 6. rivin kurssi
+coursesixa.click()#painetaan sitä
+
+coursesevena = driver.find_element(By.XPATH, "/html/body/div[2]/div/div[2]/div/div/div/div[2]/ul/li[8]/ul/li/a[3]")#löydetään 7. rivin kurssi
+coursesevena.click()#painetaan sitä
+
+firstbuttona.click()#suljetaan 4 periodin kurssit
+
+time.sleep(0.5) #odotetaan puoli sekuntia, jotta 4. periodin kurssit ehtivät latautua
+
+WebDriverWait(driver, 5).until(
+    EC.presence_of_element_located((By.XPATH, "/html/body/div[2]/div/div[1]/div/div/div[2]/ul[1]/li[5]/a")) #odotetaan 5. periodin nappia
+)
+
+firstbuttonb = driver.find_element(By.XPATH, "/html/body/div[2]/div/div[1]/div/div/div[2]/ul[1]/li[5]/a")#löydetään 5. perioidin  nappi
+firstbuttonb.click()#painetaan nappia
+
+WebDriverWait(driver, 5).until(
+    EC.presence_of_element_located((By.XPATH, "/html/body/div[2]/div/div[2]/div/div/div/div[2]/ul/li[2]/ul/li/a[11]")) #odotetaan 1. kurssin nappia
+)
+
+courseoneb = driver.find_element(By.XPATH, "/html/body/div[2]/div/div[2]/div/div/div/div[2]/ul/li[2]/ul/li/a[11]")#löydetään 1. rivin kurssi
+courseoneb.click()#painetaan sitä
+
+coursetwob = driver.find_element(By.XPATH, "/html/body/div[2]/div/div[2]/div/div/div/div[2]/ul/li[3]/ul/li/a[3]")#löydetään 2. rivin kurssi
+coursetwob.click()#painetaan sitä
+
+coursethreeb = driver.find_element(By.XPATH, "/html/body/div[2]/div/div[2]/div/div/div/div[2]/ul/li[4]/ul/li/a[7]")#löydetään 3. rivin kurssi
+coursethreeb.click()#painetaan sitä
+
+coursefourb = driver.find_element(By.XPATH, "/html/body/div[2]/div/div[2]/div/div/div/div[2]/ul/li[5]/ul/li/a[4]")#löydetään 4. rivin kurssi
+coursefourb.click()#painetaan sitä
+
+coursefiveb = driver.find_element(By.XPATH, "/html/body/div[2]/div/div[2]/div/div/div/div[2]/ul/li[6]/ul/li/a[6]")#löydetään 5. rivin kurssi
+coursefiveb.click()#painetaan sitä
+
+coursesixb = driver.find_element(By.XPATH, "/html/body/div[2]/div/div[2]/div/div/div/div[2]/ul/li[7]/ul/li/a[5]")#löydetään 6. rivin kurssi
+coursesixb.click()#painetaan sitä
+
+coursesevenb = driver.find_element(By.XPATH, "/html/body/div[2]/div/div[2]/div/div/div/div[2]/ul/li[8]/ul/li/a[5]")#löydetään 7. rivin kurssi
+coursesevenb.click()#painetaan sitä
 
 
-coursethree2 = driver.find_element(By.XPATH, "3. valittavan kurssin xpath")#löydetään 3. rivin kurssi
-coursethree2.click()#painetaan sitä
 
-coursefour2 = driver.find_element(By.XPATH, "4. valittavan kurssin xpath")#löydetään 4. rivin kurssi
-coursefour2.click()#painetaan sitä
+time.sleep(10) #sovellus odottaa hetken
 
-coursefive2 = driver.find_element(By.XPATH, "5. valittavan kurssin xpath")#löydetään 5. rivin kurssi
-coursefive2.click()#painetaan sitä
-
-coursesix2 = driver.find_element(By.XPATH, "6. valittavan kurssin xpath")#löydetään 6. rivin kurssi
-coursesix2.click()#painetaan sitä
-
-courseseven2 = driver.find_element(By.XPATH, "7. valittavan kurssin xpath")#löydetään 7. rivin kurssi
-courseseven2.click()#painetaan sitä
-
-firstbutton2.click()#suljetaan 4 periodin kurssit
-
-firstbutton3 = driver.find_element(By.PARTIAL_LINK_TEXT, "5. periodi lv 2024-2025")#löydetään 5. perioidin kurssin nappi
-firstbutton3.click()#painetaan nappia
-
-courseone3 = driver.find_element(By.XPATH, "1. valittavan kurssin xpath")#löydetään 1. rivin kurssi
-courseone3.click()#painetaan sitä
-
-coursetwo3 = driver.find_element(By.XPATH, "2. valittavan kurssin xpath")#löydetään 2. rivin kurssi
-coursetwo3.click()#painetaan sitä
-
-
-coursethree3 = driver.find_element(By.XPATH, "3. valittavan kurssin xpath")#löydetään 3. rivin kurssi
-coursethree3.click()#painetaan sitä
-
-coursefour3 = driver.find_element(By.XPATH, "4. valittavan kurssin xpath")#löydetään 4. rivin kurssi
-coursefour3.click()#painetaan sitä
-
-coursefive3 = driver.find_element(By.XPATH, "5. valittavan kurssin xpath")#löydetään 5. rivin kurssi
-coursefive3.click()#painetaan sitä
-
-coursesix3 = driver.find_element(By.XPATH, "6. valittavan kurssin xpath")#löydetään 6. rivin kurssi
-coursesix3.click()#painetaan sitä
-
-courseseven3 = driver.find_element(By.XPATH, "7. valittavan kurssin xpath")#löydetään 7. rivin kurssi
-courseseven3.click()#painetaan sitä
-
-
-
-time.sleep(10)
-
-driver.quit()
-
+driver.quit() #sovellus sulkee chromen
