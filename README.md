@@ -10,8 +10,8 @@
  - Lataa chromedriver.exe tiedosto.
  - Pistä molemmat lataamasi tiedostot yhteen kansioon tietokoneella .
  - Tämän käyttöä varten sinulla pitää olla ladattuna python ja joku koodieditori.
- - voit käyttää mitä vain koodieditoria, mutta suosittelen [Visual Studio codea](https://code.visualstudio.com/download).
- - Pythonin voi ladata helposti ja nopeasti [Microsoft Storesta](ms-windows-store://pdp?ocid=pdpshare&hl=en-us&gl=us&referrer=storeforweb&source=https%3A%2F%2Fgithub.com%2FMikaProgram%2Fkurssivalitsija%2Fblob%2Fmain%2FREADME.md&productid=9nrwmjp3717k&mode=mini&pos=0%2C0%2C1920%2C1040)
+ - voit käyttää mitä vain koodieditoria, mutta suosittelen [Visual Studio codea]([https://code.visualstudio.com/download).
+ - Pythonin voi ladata helposti ja nopeasti [Microsoft Storesta](ms-windows-store://pdp?ocid=pdpshare&hl=en-us&gl=us&referrer=storeforweb&source=https%3A%2F%2Fgithub.com%2FMikaProgram%2Fkurssivalitsija%2Fblob%2Fmain%2FREADME.md&productid=9nrwmjp3717k&mode=mini&pos=0%2C0%2C1920%2C1040](https://www.microsoft.com/store/productId/9NRWMJP3717K?ocid=pdpshare)
  - Kun olet ladannut kaiken tarvittavan sinun pitää avata koodieditori ja editoida tarvittavat kohdat sieltä
     - Wilman tunnukset
     - Kurssit jotka haluat valita
