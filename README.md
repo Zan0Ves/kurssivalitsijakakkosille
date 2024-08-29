@@ -17,12 +17,12 @@
  -Kurssit jotka haluat valita
 - Python tiedostossa sanotaan että "Tarvittavan kurssin Xpath"
   - Xpathin saa helposti
- -Avaa chrome selaimessa Wilma
- -Wilmassa avaa kurssitarojotin 
- -paina CTRL + SHIFT + I
- -Paina vasemmassa yläkulmassa olevaa nappia avautuneessa valikossa, joka löytää sinulle tarvittavan rivin HTML-koodissa
- -paina sitä riviä oikealla hiiren napilla
- -ja paina "copy full Xpath"
+  - Avaa chrome selaimessa Wilma
+  - Wilmassa avaa kurssitarojotin 
+  - paina CTRL + SHIFT + I
+  - Paina vasemmassa yläkulmassa olevaa nappia avautuneessa valikossa, joka löytää sinulle tarvittavan rivin HTML-koodissa
+  - paina sitä riviä oikealla hiiren napilla
+  - ja paina "copy full Xpath"
  - Kun kaikki on valmiina käynnistä koodi joko editorin tai cmd:n kautta ja se valitsee sinulle etukäteen syöttämäsi kurssit
 
 
