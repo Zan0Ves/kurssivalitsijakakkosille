@@ -1,6 +1,9 @@
 # Kurssivalitsija
 ## Valitsee lukion kurssit wilmassa puolestasi
 
+![Kurssivalitsija](https://github.com/user-attachments/assets/b53cb63e-70c3-44a2-9434-b0e638303e45)
+
+
 ## Käyttö ja asennus 
 
  - Aluksi lataa kurssivalitsija python (.py) tiedosto. 
