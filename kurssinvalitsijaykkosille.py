@@ -11,6 +11,8 @@ import time
 service = Service(executable_path="chromedriver.exe")
 driver = webdriver.Chrome(service=service)
 
+driver.maximize_window()
+
 time.sleep(3) #sovellus odottaa hetken googlen avautumisen jälkeen
 
 driver.get("https://helsinki.inschool.fi/!02716814/selection/view?") #avataan sivusto
