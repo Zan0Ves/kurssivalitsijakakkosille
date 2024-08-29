@@ -12,7 +12,7 @@
  - Tämän käyttöä varten sinulla pitää olla ladattuna python ja joku koodieditori.
  - voit käyttää mitä vain koodieditoria, mutta suosittelen [Visual Studio codea](https://code.visualstudio.com/download).
  - Pythonin voi ladata helposti ja nopeasti [Microsoft Storesta](https://www.microsoft.com/store/productId/9NRWMJP3717K?ocid=pdpshare)
- - Kun olet ladannut kaiken tarvittavan sinun pitää avata koodieditori ja editoida tarvittavat paikat sieltä
+ - Kun olet ladannut kaiken tarvittavan sinun pitää avata koodieditori ja editoida tarvittavat kohdat sieltä
   - Wilman tunnukset
   - Kurssit jotka haluat valita
 - Python tiedostossa sanotaan että "Tarvittavan kurssin Xpath"
