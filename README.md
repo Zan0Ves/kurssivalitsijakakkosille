@@ -16,7 +16,7 @@
  -Wilman tunnukset
  -Kurssit jotka haluat valita
 - Python tiedostossa sanotaan että "Tarvittavan kurssin Xpath"
- -Xpathin saa helposti 
+  - [Xpathin saa helposti  ]
  -Avaa chrome selaimessa Wilma
  -Wilmassa avaa kurssitarojotin 
  -paina CTRL + SHIFT + I
