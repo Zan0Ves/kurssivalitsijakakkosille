@@ -26,6 +26,10 @@
  - Kun kaikki on valmiina käynnistä koodi joko editorin tai cmd:n kautta ja suurenna browseria joka avautuu parin sekunnin koluttue koko näytölle nopeasise
  - lopuksi valitsee sinulle etukäteen syöttämäsi kurssit
 
+## Kannattaa tarkistaa se toimiiko koodi ennen ku kurssitarjotin avautuu, koska joskus voit vahingossa laittaa väärän kurssin koodiin tai tehdä jotain muita virheitä
+
+*Tömö koodi on alunperin tehty Alppilan lukion kurssitarjotinta varten, joten en ole varma tuleeko se toimimaan muissa lukioissa*
+
 
   
 
