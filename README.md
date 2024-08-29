@@ -10,7 +10,7 @@
  - Lataa chromedriver.exe tiedosto.
  - Pistä molemmat lataamasi tiedostot yhteen kansioon tietokoneella .
  - Tämän käyttöä varten sinulla pitää olla ladattuna python ja joku koodieditori.
- - voit käyttää mitä vain koodieditoria, mutta suosittelen [Visual Studio codea]([https://code.visualstudio.com/download).
+ - voit käyttää mitä vain koodieditoria, mutta suosittelen [Visual Studio codea](https://code.visualstudio.com/download).
  - Pythonin voi ladata helposti ja nopeasti [Microsoft Storesta](https://www.microsoft.com/store/productId/9NRWMJP3717K?ocid=pdpshare)
  - Kun olet ladannut kaiken tarvittavan sinun pitää avata koodieditori ja editoida tarvittavat kohdat sieltä
     - Wilman tunnukset
