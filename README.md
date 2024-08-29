@@ -13,8 +13,8 @@
  - voit käyttää mitä vain koodieditoria, mutta suosittelen [Visual Studio codea](https://code.visualstudio.com/download).
  - Pythonin voi ladata helposti ja nopeasti [Microsoft Storesta](https://www.microsoft.com/store/productId/9NRWMJP3717K?ocid=pdpshare)
  - Kun olet ladannut kaiken tarvittavan sinun pitää avata koodieditori ja editoida tarvittavat paikat sieltä
- - Wilman tunnukset
- - Kurssit jotka haluat valita
+  - Wilman tunnukset
+  - Kurssit jotka haluat valita
 - Python tiedostossa sanotaan että "Tarvittavan kurssin Xpath"
   - Xpathin saa helposti
   - Avaa chrome selaimessa Wilma
