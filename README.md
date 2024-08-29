@@ -23,7 +23,8 @@
     - Paina vasemmassa yläkulmassa olevaa nappia avautuneessa valikossa, joka löytää sinulle tarvittavan rivin HTML-koodissa
     - paina sitä riviä oikealla hiiren napilla
     - ja paina "**copy full Xpath**"
- - Kun kaikki on valmiina käynnistä koodi joko editorin tai cmd:n kautta ja se valitsee sinulle etukäteen syöttämäsi kurssit
+ - Kun kaikki on valmiina käynnistä koodi joko editorin tai cmd:n kautta ja suurenna browseria joka avautuu parin sekunnin koluttue koko näytölle nopeasise
+ - lopuksi valitsee sinulle etukäteen syöttämäsi kurssit
 
 
   
