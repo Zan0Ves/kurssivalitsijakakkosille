@@ -31,7 +31,7 @@
 
 
 
-*Tömö koodi on alunperin tehty Alppilan lukion kurssitarjotinta varten, joten en ole varma tuleeko se toimimaan muissa lukioissa*
+*Tämä koodi on alunperin tehty Alppilan lukion kurssitarjotinta varten, joten en ole varma tuleeko se toimimaan muissa lukioissa*
 
 
   
