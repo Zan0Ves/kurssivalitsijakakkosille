@@ -26,6 +26,9 @@
  - Kun kaikki on valmiina käynnistä koodi joko editorin tai cmd:n kautta 
  - lopuksi valitsee sinulle etukäteen syöttämäsi kurssit
 
+[Video-ohje](https://www.youtube.com/watch?v=Tp0cM2fn9U0)
+
+
 **Kannattaa tarkistaa se toimiiko koodi ennen kun kurssitarjotin avautuu, koska joskus voit vahingossa laittaa väärän kurssin koodiin tai tehdä jotain muita virheitä**
 
 
