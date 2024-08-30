@@ -11,16 +11,15 @@ import time
 service = Service(executable_path="chromedriver.exe")
 driver = webdriver.Chrome(service=service)
 
-driver.maximize_window()
+driver.maximize_window()#google avautuu koko näytössä
 
 time.sleep(3) #sovellus odottaa hetken googlen avautumisen jälkeen
 
 driver.get("https://helsinki.inschool.fi/!02716814/selection/view?") #avataan sivusto
 
 WebDriverWait(driver, 10).until(
-    EC.presence_of_element_located((By.ID, "login-frontdoor"))
+    EC.presence_of_element_located((By.ID, "login-frontdoor")) #odotetaan sähköpostiosoite kenttää
 )
-#odotetaan sähköpostiosoite kenttää
 
 input_element = driver.find_element(By.ID, "login-frontdoor") #löydetään sähköpostin kenttä
 input_element.clear()
