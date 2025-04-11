@@ -12,6 +12,10 @@
  - Tämän käyttöä varten sinulla pitää olla ladattuna python ja joku koodieditori.
      - voit käyttää mitä vain koodieditoria, mutta suosittelen [Pycharmia](https://www.jetbrains.com/pycharm/download/?section=windows).
  - Pythonin voi ladata helposti ja nopeasti [Microsoft Storesta](https://www.microsoft.com/store/productId/9NRWMJP3717K?ocid=pdpshare)
+ - Jotta koodi toimii, sinun on asennettava selenium.
+ - Se pitää tehdä pythonin jälkeen
+ - Avaa komentokehote (command prompt) kirjoittamalla cmd windowsin hakuun.
+ - Kirjoita sinne ""pip install selenium""
  - Kun olet ladannut kaiken tarvittavan sinun pitää avata koodieditori ja editoida tarvittavat kohdat sieltä
     - Wilman tunnukset
     - Kurssit jotka haluat valita
