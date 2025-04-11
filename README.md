@@ -15,7 +15,7 @@
  - Jotta koodi toimii, sinun on asennettava selenium.
  - Se pitää tehdä pythonin jälkeen
  - Avaa komentokehote (command prompt) kirjoittamalla cmd windowsin hakuun.
- - Kirjoita sinne ""pip install selenium""
+ - Kirjoita sinne **pip install selenium**, paina enter ja odota, että selenium asentuu.
  - Kun olet ladannut kaiken tarvittavan sinun pitää avata koodieditori ja editoida tarvittavat kohdat sieltä
     - Wilman tunnukset
     - Kurssit jotka haluat valita
